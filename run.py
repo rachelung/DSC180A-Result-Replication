@@ -13,7 +13,7 @@ def main(targets):
             data_cfg = json.load(fh)
 
         # make the data target
-        get_data(**data_cfg)
+        #get_data(**data_cfg)
 
     return
 
