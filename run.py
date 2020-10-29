@@ -3,7 +3,7 @@
 import sys
 import json
 
-from etl import get_data
+#from etl import "custom_function"
 
 
 def main(targets):
