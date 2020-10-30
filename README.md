@@ -2,8 +2,8 @@
 
 WIP
 
-Original Autophrase: https://github.com/shangjingbo1226/AutoPhrase
-Lecture: https://docs.google.com/presentation/d/11G4jnAL88mJGUB1rnjOupDGj3wRoSCSAV8kriX_J3RY/edit?usp=sharing
+Original Autophrase: https://github.com/shangjingbo1226/AutoPhrase \n
+Lecture: https://docs.google.com/presentation/d/11G4jnAL88mJGUB1rnjOupDGj3wRoSCSAV8kriX_J3RY/edit?usp=sharing \n
 Report: https://docs.google.com/document/d/1hiMhx4a7hAWtOkaTgXeq9mJtb7TsjOXE6ypZMtc4J4I/edit
 
 # Description of Checkpoint 1 - Code Portion
