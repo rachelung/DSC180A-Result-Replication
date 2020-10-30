@@ -7,7 +7,7 @@ Lecture: https://docs.google.com/presentation/d/11G4jnAL88mJGUB1rnjOupDGj3wRoSCS
 Report: https://docs.google.com/document/d/1hiMhx4a7hAWtOkaTgXeq9mJtb7TsjOXE6ypZMtc4J4I/edit
 
 # Description of Checkpoint 1 - Code Portion
-From: https://dsc-capstone.github.io/assignments/quarter-1-replication/#checkpoint-1
+From: https://dsc-capstone.github.io/assignments/quarter-1-replication/#checkpoint-1 \
 Code Portion:
 
 Your code should be turned in via GitHub. It should:
