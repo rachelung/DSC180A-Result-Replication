@@ -13,48 +13,14 @@ if [ -d "default_data" ]; then
 else
     DATA_DIR=${DATA_DIR:- data/raw}
 fi
-# MODEL is the directory in which the resulting model will be saved.
-if [ -d "models" ]; then
-    MODELS_DIR=${MODELS_DIR:- models}
-else
-    MODELS_DIR=${MODELS_DIR:- default_models}
-fi
-MODEL=${MODEL:- ${MODELS_DIR}/DBLP}
+
 # RAW_TRAIN is the input of AutoPhrase, where each line is a single document.
 DEFAULT_TRAIN=${DATA_DIR}/EN/DBLP.5K.txt
 RAW_TRAIN=${RAW_TRAIN:- $DEFAULT_TRAIN}
-# When FIRST_RUN is set to 1, AutoPhrase will run all preprocessing. 
-# Otherwise, AutoPhrase directly starts from the current preprocessed data in the tmp/ folder.
-FIRST_RUN=${FIRST_RUN:- 1}
-# When ENABLE_POS_TAGGING is set to 1, AutoPhrase will utilize the POS tagging in the phrase mining. 
-# Otherwise, a simple length penalty mode as the same as SegPhrase will be used.
-ENABLE_POS_TAGGING=${ENABLE_POS_TAGGING:- 1}
-# A hard threshold of raw frequency is specified for frequent phrase mining, which will generate a candidate set.
-MIN_SUP=${MIN_SUP:- 10}
-# You can also specify how many threads can be used for AutoPhrase
-THREAD=${THREAD:- 10}
-COMPILE=${COMPILE:- 1}
-### Begin: Suggested Parameters ###
-MAX_POSITIVES=-1
-LABEL_METHOD=DPDN
-RAW_LABEL_FILE=${RAW_LABEL_FILE:-""}
-### End: Suggested Parameters ###
 
 green=`tput setaf 2`
 reset=`tput sgr0`
 
-if [ $COMPILE -eq 1 ]; then
-    echo ${green}===Compilation===${reset}
-    bash compile.sh
-fi
-
-mkdir -p tmp
-mkdir -p ${MODEL}
-
-###if [ $RAW_TRAIN == $DEFAULT_TRAIN ] && [ ! -e $DEFAULT_TRAIN ]; then
 echo ${green}===Downloading Toy Dataset===${reset}
-curl https://urldefense.com/v3/__http://dmserv2.cs.illinois.edu/data/DBLP.txt.gz__;!!Mih3wA!Qllnl0op2zvc8UFHs1AJX7e3YQuz2dVdjODRIoWntZRCRzuwU4QKr_rmgf1M$  --output ${DATA_DIR}/EN/DBLP.txt.gz
+curl http://dmserv2.cs.illinois.edu/data/DBLP.txt.gz --output ${DATA_DIR}/EN/DBLP.txt.gz
 gzip -d ${DATA_DIR}/EN/DBLP.txt.gz -f
-###fi
-
-### END Compilation###
