@@ -2,7 +2,7 @@
 
 import sys
 import json
-
+import subprocess
 #from etl import "custom_function"
 
 
@@ -22,3 +22,5 @@ if __name__ == '__main__':
     targets = sys.argv[1:]
     main(targets)
 
+
+subprocess.call("auto_phrase_data_acquisition.sh", shell=True)
