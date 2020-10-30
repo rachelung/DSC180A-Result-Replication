@@ -43,6 +43,6 @@ Running run.py (via python run.py) simply runs the bash script file auto_phrase_
 This file identifies the current folder that houses the data for use later (in this case, it is hard-coded to data/raw folder). This folder currently holds some data already (DBLP.5K.txt) but this bash script also downloads some additional data (DBLP.txt) to this same folder. 
 
 ### Responsibilites
-Rachel Ung developed the Github repo, including all folders, run.py, and README.md; restyled report portion in LaTeX.
+Rachel Ung developed the Github repo, including all folders, run.py, and README.md; restyled report portion in LaTeX.\
 Vincent Le developed the raw report portion of Checkpoint 1, added auto_phrase_data_acquisition.sh, edited run.py and README.md
 
