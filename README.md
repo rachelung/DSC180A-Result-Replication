@@ -32,3 +32,9 @@ be runnable runnable via the command python run.py data. Include a data-params.j
 For both the Report and Code Portion, write in a Canvas comment listing what tasks each group member was responsible for.
 site: https://dsc-capstone.github.io/assignments/quarter-1-replication/#checkpoint-1
 
+# run.py
+Running run.py (via python run.py) simply runs the bash script file auto_phrase_data_acquisition.sh
+
+# auto_phrase_data_acquisition.sh
+This file identifies the current folder that houses the data for use later (in this case, it is hard-coded to data/raw folder). This folder currently holds some data already (DBLP.5K.txt) but this bash script also downloads some additional data (DBLP.txt) to this same folder. 
+
