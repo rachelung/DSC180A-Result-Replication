@@ -1,8 +1,0 @@
-{"Data Inputs": {
- "Text Corpus 1": {
-   "name":"DBLP.5K",
-   "file type":".txt",
-   "filepath":"data/raw/EN/",
-   "num_lines":"5000",
-   "file size":"~722 KB"
- }
