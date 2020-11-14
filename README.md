@@ -17,7 +17,7 @@ Your code should be turned in via GitHub. It should:
 - include documentation both in your README.md, describing the purpose of the code, its contents, and how to run it.
 - be runnable runnable via the command python run.py data. Include a data-params.json file in the config directory, which specifies any data-input locations. If your data-ingestion requires data that is on your local computer, include a copy of the data in your domain’s /teams directory on the DSMLP server and include that location in your data-params.json.
 
-# Guidelines as established by project mentor:
+# (Checkpoint 1) Guidelines as established by project mentor:
 
 1. Related work: Try to summarize the lecture and fuse it together with AutoPhrase's related work. Paraphrase is required. Plagiarization is not allowed.
 
@@ -35,6 +35,14 @@ Your code should be turned in via GitHub. It should:
 
 For both the Report and Code Portion, write in a Canvas comment listing what tasks each group member was responsible for.
 site: https://dsc-capstone.github.io/assignments/quarter-1-replication/#checkpoint-1
+
+# (Checkpoint 2) Guidelines as established by project mentor:
+
+1. Incorporate data cleaning code into your pipeline, if relevant. You can do some extra cleanings than the ones already there in AutoPhrase.
+
+2. Develop code that generates analysis/figures for EDA.
+
+3. Implement the methods that generate results. Here, you are asked to generate some bash script and call it to leverage AutoPhrase.
 
 # run.py
 Running run.py (via python run.py) simply runs the bash script file auto_phrase_data_acquisition.sh
