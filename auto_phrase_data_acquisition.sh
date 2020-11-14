@@ -1,6 +1,6 @@
 #!/bin/bash
-# In effect, the commands below check to see if we're running in a Docker container--in that case, the (default) 
-# "data" and "models" directories will have been renamed, in order to avoid conflicts with mounted directories 
+# In effect, the commands below check to see if we're running in a Docker container--in that case, the (default)
+# "data" and "models" directories will have been renamed, in order to avoid conflicts with mounted directories
 # with the same names.
 #
 # DATA_DIR is the default directory for reading data files.  Because this directory contains not only the default
