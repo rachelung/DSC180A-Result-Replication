@@ -4,7 +4,8 @@ import sys
 import json
 import subprocess
 from etl import preprocess
-from et1 import plot_word_
+from et1 import plot_word_freq
+from et1 import plot_sentence_freq
 
 
 def main(targets):
