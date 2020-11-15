@@ -3,5 +3,5 @@
     "build": "run.py",
     "library": ["src"],
     "notebook": ["notebooks/text.ipynb"],
-    "targets": ["eda", "notebook"]
+    "targets": ["eda", "all"]
 }
