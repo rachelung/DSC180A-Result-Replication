@@ -13,8 +13,7 @@ def preprocess(text_file):
   df['listed'] = df[0].apply(lambda x: x.split(" ")) # changes representation from string -> list of strings
   df['num_words'] = df['listed'].apply(len) # words per document
   df['num_sentences'] = df[0].apply(lambda x: x.count('.')) # sentences per document, number of periods
-  return df
-  
+  return df 
 
 def n_gram(document, n):
   """ creates n-grams for specified n length of a document """
