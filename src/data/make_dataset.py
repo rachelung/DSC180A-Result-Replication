@@ -1,5 +1,8 @@
 import sys
 import glob
+import os
+from zipfile import ZipFile
+from env_setup import auth
 import pandas as pd
 import numpy as np
 from matplotlib import pyplot as plt
@@ -14,3 +17,40 @@ def preprocess(text_file):
   df['num_words'] = df['listed'].apply(len) # words per document
   df['num_sentences'] = df[0].apply(lambda x: x.count('.')) # sentences per document, number of periods
   return df
+
+def get_data(outdir):
+  """
+  download data
+  """
+  
+
+# for kaggle (?)
+# try:
+    #import kaggle
+# except OSError:
+    # credentials not yet set
+    # auth()
+    # import kaggle
+    
+
+#def get_data(outdir):
+    #'''
+    #download and unzip titanic data from Kaggle.
+    #'''
+    #kaggle.api.authenticate()
+    #kaggle.api.competition_download_files(
+        #'titanic', 
+       # path=outdir
+    #)
+
+    # unzip output
+    #p = os.path.join(outdir, 'titanic.zip')
+    #with ZipFile(fp) as zf:
+        #zf.extractall(outdir)
+
+    # remove zip file
+    #os.remove(fp)
+
+    #return read_train(outdir)
+    
+  
