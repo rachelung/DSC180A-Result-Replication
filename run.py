@@ -19,6 +19,8 @@ def main(targets):
 
     return
 
+    #if 'EDA' in targets:
+        #subprocess.call(["python", "create_EDA_notebook.py"])
 
 if __name__ == '__main__':
     targets = sys.argv[1:]
