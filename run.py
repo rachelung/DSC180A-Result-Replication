@@ -3,7 +3,7 @@
 import sys
 import json
 import subprocess
-from  import preprocess
+from features import preprocess
 
 
 def main(targets):
