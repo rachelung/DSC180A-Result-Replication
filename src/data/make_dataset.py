@@ -11,6 +11,8 @@ def get_data(outdir):
   """
   download data
   """
+  df = pd.read_csv(outdir, header=None, sep='\n') # reads each line in as its own document
+  return df
 
   
 
@@ -43,22 +45,22 @@ def get_data(outdir):
 
     #return read_train(outdir)
     
- def read_train(datadir):
-    '''
-    Reads raw training data from disk.
-    (Would normally be more complicated!)
-    '''
-    fp = os.path.join(datadir, 'train.csv')
-    return pd.read_csv(fp)
+ #def read_train(datadir):
+    #'''
+    #Reads raw training data from disk.
+    #(Would normally be more complicated!)
+    #'''
+    #fp = os.path.join(datadir, 'train.csv')
+    #return pd.read_csv(fp)
 
 
-def read_test(datadir):
-    '''
-    Reads raw test data from disk.
-    (Would normally be more complicated!)
-    '''
+#def read_test(datadir):
+    #'''
+    #Reads raw test data from disk.
+    #(Would normally be more complicated!)
+    #'''
 
-    fp = os.path.join(datadir, 'test.csv')
-    return pd.read_csv(fp)
+    #fp = os.path.join(datadir, 'test.csv')
+    #return pd.read_csv(fp)
     
   
