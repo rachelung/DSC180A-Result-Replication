@@ -6,7 +6,7 @@ from matplotlib import pyplot as plt
 
 def preprocess(df):
   """
-  takes in a text_file to reformat file into a pandas dataframe
+  takes in a pandas dataframe, applying some preprocessing
   """
   df[0] = df[0].apply(lambda w: w.lower()) # makes all words lowercase
   df['listed'] = df[0].apply(lambda x: x.split(" ")) # changes representation from string -> list of strings
