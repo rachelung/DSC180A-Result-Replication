@@ -18,10 +18,10 @@ def main(targets):
     return
 
     if 'features' in targets:
-        with open('config/features-params.json') as fh:
-            feats_cfg = json.load(fh)
-        preprocessed = apply_features(data)
-
+        with open('config/data-params.json') as fh:
+            data_cfg = json.load(fh)
+        preprocessed = preprocess(**data_cfg)
+        
     if 'EDA' in targets:
         subprocess.call(["python", "create_EDA_notebook.py"])
         
