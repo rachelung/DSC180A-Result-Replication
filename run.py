@@ -22,7 +22,7 @@ def main(targets):
     if 'features' in targets:
         with open('config/features-params.json') as fh:
             feats_cfg = json.load(fh)
-        preprocessed = apply_features(data, **feats_cfg)
+        preprocessed = apply_features(data)
 
     if 'EDA' in targets:
         subprocess.call(["python", "create_EDA_notebook.py"])
