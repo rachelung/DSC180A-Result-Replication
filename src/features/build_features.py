@@ -1,3 +1,12 @@
+import sys
+import glob
+import os
+from zipfile import ZipFile
+from env_setup import auth
+import pandas as pd
+import numpy as np
+from matplotlib import pyplot as plt
+
 def preprocess(text_file):
   """
   takes in a text_file to reformat file into a pandas dataframe
