@@ -20,6 +20,8 @@ def main(targets):
     if 'features' in targets:
         with open('config/data-params.json') as fh:
             data_cfg = json.load(fh)
+        
+        # preprocessing textfile; resulting dataframe
         preprocessed = preprocess(**data_cfg)
         
     if 'EDA' in targets:
