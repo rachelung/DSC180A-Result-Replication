@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+subprocess.call("auto_phrase_data_acquisition.sh", shell=True)
+subprocess.call("implement_methods.sh", shell=True)
+
 import sys
 import json
 import subprocess
@@ -35,5 +38,3 @@ if __name__ == '__main__':
     main(targets)
 
 
-subprocess.call("auto_phrase_data_acquisition.sh", shell=True)
-subprocess.call("implement_methods.sh", shell=True)
