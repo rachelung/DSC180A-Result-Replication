@@ -4,8 +4,8 @@
 import sys
 import json
 import subprocess
-from src/data import get_data
-from src/features import preprocess
+from src.data import get_data
+from src.features import preprocess
 
 
 def main(targets):
