@@ -44,6 +44,15 @@ site: https://dsc-capstone.github.io/assignments/quarter-1-replication/#checkpoi
 
 3. Implement the methods that generate results. Here, you are asked to generate some bash script and call it to leverage AutoPhrase.
 
+# (Final) Guidelines as established by project mentor:
+1. Try to randomly pick 100 multi-word phrases whose scores are greater than 0.5. Manually check them and see what's the percentage of high-quality phrases.
+
+2. Since these 100 multi-word phrases can be ranked by their scores, please plot a precision-recall curve too.
+
+3. Try to run the word2vec code on the phrasal segmentation results to obtain phrase embedding. 
+
+4. Pick 3 high-quality phrases from your previous annotations in step 1, run a similarity search among all multi-word phrases whose scores are greater than 0.5, and report the top-5 results. Comment on the results. 
+
 # run.py
 Running run.py (via python run.py) simply runs the bash script file auto_phrase_data_acquisition.sh
 
