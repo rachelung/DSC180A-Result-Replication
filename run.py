@@ -4,8 +4,8 @@
 import sys
 import json
 import subprocess
-from data import get_data
-from features import preprocess
+#from data import get_data
+#from features import preprocess
 
 
 def main(targets):
