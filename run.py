@@ -4,7 +4,7 @@
 import sys
 import json
 import subprocess
-import src.data
+from src.data.make_dataset.py import get_data
 from src.features import preprocess
 
 
