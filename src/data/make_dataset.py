@@ -1,8 +1,6 @@
 import sys
 import glob
 import os
-from zipfile import ZipFile
-from env_setup import auth
 import pandas as pd
 import numpy as np
 from matplotlib import pyplot as plt
