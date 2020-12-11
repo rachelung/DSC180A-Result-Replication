@@ -5,8 +5,7 @@ import sys
 import json
 import subprocess
 from src.data.make_dataset.py import get_data
-from src.features import preprocess
-
+from src.features.build_features import preprocess
 
 def main(targets):
 
