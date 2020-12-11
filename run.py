@@ -4,7 +4,7 @@
 import sys
 import json
 import subprocess
-from src.data import get_data
+import src.data
 from src.features import preprocess
 
 
